@@ -1,0 +1,87 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 16px;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 16px;
+    margin: -16px -16px 0;
+    background: var(--tg-theme-secondary-bg-color);
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .hero-subtitle {
+    color: var(--tg-theme-hint-color);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .wallet-container {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* This is the key class for centering the connect button */
+  .connect-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Override TON Connect button styles to ensure it's centered */
+  .connect-button-wrapper > div {
+    width: 100% !important;
+  }
+  
+  .connect-button-wrapper button {
+    width: 100% !important;
+  }
+  
+  .connect-hint {
+    color: var(--tg-theme-hint-color);
+    font-size: 14px;
+  }
+  
+  .start-staking-link {
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .stat-card {
+    background: var(--tg-theme-secondary-bg-color);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .stat-label {
+    color: var(--tg-theme-hint-color);
+    margin-bottom: 8px;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+    font-weight: bold;
+  }
